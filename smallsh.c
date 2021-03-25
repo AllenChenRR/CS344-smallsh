@@ -89,7 +89,6 @@ void cdToPath(char* path) {
 */
 void printCmdLine(struct commandLine *aLine) {
     // Prints the command
-    printf("Print Command Line: ~~~~~~~~~~~~~~\n");
     fflush(stdout);
     printf("%s\n", aLine->command);
     fflush(stdout);
@@ -460,7 +459,7 @@ struct commandLine *parseCommandLine(char *line) {
 
     // First token
     char *token = strtok_r(line, " ", &savePtr);
-    *tempPtr = calloc(strlen(token) + 1 , sizeof(char)); // FAILING RIGHT HERE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    *tempPtr = calloc(strlen(token) + 1 , sizeof(char)); 
     strcpy(*tempPtr, token);
     // Advances the pointer
     tempPtr++;
