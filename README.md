@@ -2,6 +2,9 @@
 
 A lightweight custom shell written in C and developed on CentOS Linux.
 
+To compile:
+gcc --std=gnu99 -o smallsh smallsh.c
+
 Features:  
  * Executes ```exit```, ```cd```, ```status``` via code built into the shell
  * Provides process ID number variable expansion for $$ anywhere in command line input
